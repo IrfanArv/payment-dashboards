@@ -1,0 +1,147 @@
+.light-style .menu .app-brand.mains {
+    height: 64px;
+}
+
+.dark-style .menu .app-brand.mains {
+    height: 64px;
+}
+
+.app-brand-logo.mains {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34px;
+    height: 24px;
+}
+
+.app-brand-logo.mains svg {
+    width: 35px;
+    height: 24px;
+}
+
+.app-brand-text.mains {
+    font-size: 1.375rem;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+    padding-top: 64px !important;
+}
+.layout-navbar-fixed
+    .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu)
+    .layout-page {
+    padding-top: 78px !important;
+}
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+    z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.mains-blocks > * {
+    display: block !important;
+}
+
+.mains-inline-spacing > * {
+    margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .mains-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .mains-only-element class with .mains-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.mains-vertical-spacing > * {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.mains-vertical-spacing.mains-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.mains-vertical-spacing-lg > * {
+    margin-top: 1.875rem !important;
+    margin-bottom: 0 !important;
+}
+.mains-vertical-spacing-lg.mains-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.mains-vertical-spacing-xl > * {
+    margin-top: 5rem !important;
+    margin-bottom: 0 !important;
+}
+.mains-vertical-spacing-xl.mains-only-element > :first-child {
+    margin-top: 0 !important;
+}
+
+.rtl-only {
+    display: none !important;
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+[dir="rtl"] .rtl-only {
+    display: block !important;
+}
+
+/*
+* Layout mains
+******************************************************************************/
+
+.layout-mains-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.layout-mains-placeholder img {
+    width: 900px;
+}
+.layout-mains-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn-upload {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+#modals-loading {
+    background: #000;
+    opacity: 0.5;
+}
+
+.logo-payment {
+    width: 80px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
